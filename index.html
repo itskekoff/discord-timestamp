@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html data-lt-installed="true">
+	<head>
+		<title>Discord timestamp generator</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body wfd-invisible="true">
+		<div class="container">
+			<p>Get a dynamic date-time display in discord messages. Choose time, click copy and enjoy! :)</p>
+		</div>
+        <div class="container">
+            <span>Date</span><input type="date" id="d">
+            <span>Time</span><input type="time" id="hm">
+            <span>Type</span>
+            <select id="t">
+                <option value="t">short time</option>
+                <option value="T">long time</option>
+                <option value="d">short date</option>
+                <option value="D">long date</option>
+                <option value="f">long date with short time</option>
+                <option value="F">long date with day of week and short time</option>
+                <option value="R" selected>relative</option>
+            </select>
+            <span>Output</span><span id="preview"></span>
+            <input type="text" readonly id="code" title="Press Ctrl/Cmd+C to copy"><button id="copy">Copy to clipboard</button>
+            <button id="current">Reset to current time</button>
+        </div>
+        <script type="text/javascript" src="js/script.js"></script>
+	</body>
+</html>
